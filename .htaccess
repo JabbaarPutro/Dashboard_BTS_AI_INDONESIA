@@ -1,0 +1,26 @@
+# Protect vendor folder
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^vendor/.*$ - [F,L]
+</IfModule>
+
+# Protect config folder
+<FilesMatch "\.(sql)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
+
+# Enable compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>

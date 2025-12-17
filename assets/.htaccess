@@ -1,0 +1,32 @@
+# Allow access to static assets
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|ico|svg|json|geojson)$">
+    Order allow,deny
+    Allow from all
+</FilesMatch>
+
+# Set proper MIME types
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType text/css .css
+    AddType application/json .json .geojson
+    AddType image/png .png
+    AddType image/jpeg .jpg .jpeg
+    AddType image/gif .gif
+    AddType image/svg+xml .svg
+</IfModule>
+
+# Enable CORS for assets
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType application/json "access plus 1 week"
+</IfModule>
