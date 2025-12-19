@@ -169,7 +169,6 @@ Dashboard_BTS_AI_INTERNAL/
 
 Aplikasi ini mengimplementasikan beberapa fitur keamanan:
 
-- Password hashing menggunakan algoritma modern
 - Session management yang aman
 - Protection terhadap SQL injection
 - XSS protection menggunakan HTMLPurifier
@@ -179,30 +178,6 @@ Aplikasi ini mengimplementasikan beberapa fitur keamanan:
 
 Database menggunakan struktur yang terdapat pada file `db_bts_aksesinternet_dashboard_internal.sql`. Import file ini untuk mendapatkan struktur tabel yang diperlukan.
 
-## 🤝 Kontribusi
-
-Kontribusi selalu diterima! Jika Anda ingin berkontribusi:
-
-1. Fork repository ini
-2. Buat branch baru (`git checkout -b feature/AmazingFeature`)
-3. Commit perubahan Anda (`git commit -m 'Add some AmazingFeature'`)
-4. Push ke branch (`git push origin feature/AmazingFeature`)
-5. Buat Pull Request
-
-## 📝 License
-
-Silakan tambahkan informasi lisensi yang sesuai untuk proyek Anda.
-
-## 👨‍💻 Author
-
-[Nama Anda / Tim Anda]
-
-## 📞 Kontak
-
-Untuk pertanyaan atau dukungan, silakan hubungi:
-
-- Email: your.email@example.com
-- GitHub: [@yourusername](https://github.com/yourusername)
 
 ## 🙏 Acknowledgments
 
