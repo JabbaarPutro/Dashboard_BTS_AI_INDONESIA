@@ -2,18 +2,18 @@
 
 Dashboard untuk monitoring dan manajemen data akses internet BTS (Base Transceiver Station) dengan visualisasi geografis Indonesia.
 
-## 📋 Deskripsi
+## Deskripsi
 
 Aplikasi web berbasis PHP untuk mengelola dan memvisualisasikan data akses internet BTS di seluruh Indonesia. Dilengkapi dengan fitur peta interaktif, statistik real-time, dan sistem manajemen pengguna.
 
-## ✨ Fitur Utama
+## Fitur Utama
 
-- 🗺️ **Visualisasi Peta Interaktif** - Menampilkan data BTS berdasarkan provinsi di Indonesia menggunakan GeoJSON
-- 📊 **Dashboard Statistik** - Analisis data dan statistik akses internet BTS
-- 👥 **Manajemen Pengguna** - Sistem autentikasi dan otorisasi pengguna
-- 📁 **Manajemen Data** - CRUD (Create, Read, Update, Delete) data BTS
-- 📤 **Import/Export Data** - Import data dari template dan export ke Excel
-- 🔒 **Keamanan** - Hash password dan session management yang aman
+-  **Visualisasi Peta Interaktif** - Menampilkan data BTS berdasarkan provinsi di Indonesia menggunakan GeoJSON
+-  **Dashboard Statistik** - Analisis data dan statistik akses internet BTS
+-  **Manajemen Pengguna** - Sistem autentikasi dan otorisasi pengguna
+-  **Manajemen Data** - CRUD (Create, Read, Update, Delete) data BTS
+-  **Import/Export Data** - Import data dari template dan export ke Excel
+-  **Keamanan** - Hash password dan session management yang aman
 
 ## 🛠️ Teknologi yang Digunakan
 
@@ -36,7 +36,7 @@ Aplikasi web berbasis PHP untuk mengelola dan memvisualisasikan data akses inter
 - **ZipStream-PHP** - File compression
 - **MathPHP** - Mathematical operations
 
-## 📦 Instalasi
+##  Instalasi
 
 ### Prerequisites
 
@@ -116,7 +116,7 @@ Pastikan Anda sudah menginstal:
 - **Create User** (`/auth/create_user.php`) - Buat pengguna baru
 - **Toggle User Status** - Aktifkan/nonaktifkan pengguna
 
-## 🗂️ Struktur File
+##  Struktur File
 
 ```
 Dashboard_BTS_AI_INTERNAL/
@@ -165,7 +165,7 @@ Dashboard_BTS_AI_INTERNAL/
 └── vendor/                      # Dependencies folder (Composer)
 ```
 
-## 🔐 Keamanan
+##  Keamanan
 
 Aplikasi ini mengimplementasikan beberapa fitur keamanan:
 
@@ -174,17 +174,15 @@ Aplikasi ini mengimplementasikan beberapa fitur keamanan:
 - XSS protection menggunakan HTMLPurifier
 - Access control dan authorization
 
-## 📊 Database Schema
+##  Database Schema
 
 Database menggunakan struktur yang terdapat pada file `db_bts_aksesinternet_dashboard_internal.sql`. Import file ini untuk mendapatkan struktur tabel yang diperlukan.
 
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Data geografis Indonesia dari [sumber GeoJSON]
 - PHPSpreadsheet untuk export Excel
 - Dan semua kontributor open-source library yang digunakan
 
----
 
-⭐ Jangan lupa untuk memberikan star jika proyek ini bermanfaat!
