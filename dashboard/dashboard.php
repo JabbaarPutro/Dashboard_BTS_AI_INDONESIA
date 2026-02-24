@@ -37,6 +37,16 @@
     </button>
 
     <div id="main-content" class="main-content ml-64 min-h-screen">
+        <!-- Modern Dashboard Header -->
+        <div class="w-full bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-500 py-10 px-8 rounded-b-3xl shadow-xl mb-8 animate-fade-in">
+            <div class="flex items-center space-x-6">
+                <img src="../assets/images/logo_bakti_komdigi.png" alt="Logo BAKTI Kominfo" class="h-20 w-auto drop-shadow-lg">
+                <div>
+                    <h1 class="text-5xl font-extrabold text-white drop-shadow-lg tracking-tight">Dashboard Infrastruktur Digital</h1>
+                    <p class="text-lg text-indigo-100 mt-2 font-medium">Selamat datang, <?php echo htmlspecialchars($_SESSION['user_nama']); ?></p>
+                </div>
+            </div>
+        </div>
         <div id="province-detail-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 z-40 flex justify-center items-center p-4">
             <div class="bg-white rounded-2xl shadow-2xl w-full max-w-5xl max-h-[90vh] flex flex-col">
                 <div class="flex justify-between items-center p-6 border-b">
@@ -88,11 +98,11 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-white p-6 rounded-xl shadow-md stat-card flex items-center space-x-4">
+                <div class="bg-gradient-to-br from-blue-100 via-white to-purple-100 p-6 rounded-xl shadow-lg stat-card flex items-center space-x-4 animate-pop">
                     <div class="bg-slate-100 p-3 rounded-full"><svg class="w-8 h-8 text-slate-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0M12.53 18.22l-.53.53-.53-.53a.75.75 0 011.06 0z" /></svg></div>
                     <div><h2 id="stat-label-total" class="text-slate-500 text-sm font-medium">Total</h2><p id="stat-total" class="text-3xl font-bold text-slate-800">0</p></div>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-md stat-card flex items-center space-x-4">
+                <div class="bg-gradient-to-br from-blue-200 via-white to-blue-100 p-6 rounded-xl shadow-lg stat-card flex items-center space-x-4 animate-pop">
                     <div class="bg-blue-100 p-3 rounded-full">
                         <svg class="w-8 h-8 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.288 15.038a5.25 5.25 0 017.424 0M5.106 11.856c3.807-3.808 9.98-3.808 13.788 0M1.924 8.674c5.565-5.565 14.587-5.565 20.152 0" />
@@ -101,7 +111,7 @@
                     </div>
                     <div><h2 id="stat-label-status1" class="text-slate-500 text-sm font-medium">Status 1</h2><p id="stat-on-air" class="text-3xl font-bold text-blue-600">0</p></div>
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-md stat-card flex items-center space-x-4">
+                <div class="bg-gradient-to-br from-orange-200 via-white to-orange-100 p-6 rounded-xl shadow-lg stat-card flex items-center space-x-4 animate-pop">
                     <div class="bg-orange-100 p-3 rounded-full"><svg class="w-8 h-8 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg></div>
                     <div><h2 id="stat-label-status2" class="text-slate-500 text-sm font-medium">Status 2</h2><p id="stat-on-progress" class="text-3xl font-bold text-orange-500">0</p></div>
                 </div>
